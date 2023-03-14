@@ -1,35 +1,31 @@
-import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
+  
   tarjoiluOhje: any = [];
-  tyo = '';
-  poydanNumero = '';
-  myyntiMaara = '';
-  faCoffee = faCoffee;
 
-
-  ngOnInit() {
-    
-  }
-  kahviaMyyty() {
+  kahvinMyynti(myyntiData: {poydanNumero: string, myyntiMaara: string}) {
     this.tarjoiluOhje.push({
       tyo: 'myyty',
-      poydanNumero: this.poydanNumero,
-      myyntiMaara: this.myyntiMaara
-    });
+      poydanNumero: myyntiData.poydanNumero,
+      myyntiMaara: myyntiData.myyntiMaara
+    }); 
   }
 
-  kahviaTarjoiltu() {
+  kahvinTarjoilu(tarjoiluData: {poydanNumero: string, myyntiMaara: string}) {
     this.tarjoiluOhje.push({
       tyo: 'tarjoiltu',
-      poydanNumero: this.poydanNumero,
-      myyntiMaara: this.myyntiMaara
-    });
+      poydanNumero: tarjoiluData.poydanNumero,
+      myyntiMaara: tarjoiluData.myyntiMaara
+    }); 
   }
+
+ 
+
+  
 }
