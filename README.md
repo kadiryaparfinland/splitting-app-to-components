@@ -2,7 +2,7 @@
 
 # In the first commit, appp works in aone component and that is app  component. 
 
-#In the second component, app structure is changed and it is divided two component. So that, it is maintainable and easy to understand.
+#In the last component, app structure is changed and it is divided two component. So that, it is maintainable and easy to understand.
 
 
 # Cafe
