@@ -23,7 +23,6 @@ import { MyyntiComponent } from './myynti/myynti.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent,
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

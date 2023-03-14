@@ -1,7 +1,7 @@
 <div class="container">
-<app-kahvila>
-  (myyntiTapahtuma)="kahvinMyynti($event)"
-  (tarjoiluTapahtuma)="kahvinTarjoilu($event)"
+<app-kahvila
+(myyntiTapahtuma)="kahvinMyynti($event)"
+(tarjoiluTapahtuma)="kahvinTarjoilu($event)">
 </app-kahvila>
 
 <hr>
@@ -9,8 +9,7 @@
   <div class="row">
     <div class="col-md-4">
       <app-myynti class="card" 
-      *ngFor="let alkio of tarjoiluOhje">
-        [tarjoilijalle]="alkio"
+      *ngFor="let alkio of tarjoiluOhje" [tarjoilijalle]="alkio">
       </app-myynti>
     </div>
   </div>

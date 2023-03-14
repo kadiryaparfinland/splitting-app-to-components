@@ -9,9 +9,11 @@
    <p class="card-text">
      <span *ngIf="ohje.tyo === 'myyty'" style="color: red; font-weight: 900;">
         tilattu {{ ohje.myyntiMaara }} kahvia.
+        <br> <span class="time">{{ timeStamp }}</span>
     </span>
      <span *ngIf="ohje.tyo === 'tarjoiltu'" style="color: green; font-weight: 900;">
         tarjoiltu {{ ohje.myyntiMaara }} kahvia.
+        <br> <span class="time">{{ timeStamp }}</span>
     </span>
    </p>
  </div>
