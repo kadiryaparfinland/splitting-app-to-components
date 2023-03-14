@@ -1,8 +1,8 @@
 #This is an example angular web app that shows how to split one code base to different components.
 
-# In the first commit, appp works in aone component and that is app  component. 
+# In the first commit, app works in a one component and that is app  component. 
 
-#In the last component, app structure is changed and it is divided two component. So that, it is maintainable and easy to understand.
+#In the last commit, app structure is changed and it is divided two component. So that, it is maintainable and easy to understand.
 
 
 # Cafe
